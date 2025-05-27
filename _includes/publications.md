@@ -1,4 +1,4 @@
-<h2 id="publications" style="margin: 8px 0px 15px;">Research</h2>
+<h2 id="publications" style="margin: 8px 0px 15px;">Publications</h2>
 
 <div class="publications">
 <ol class="bibliography">
@@ -22,8 +22,8 @@
       {% if link.data %} 
       <a href="{{ link.data }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">data</a>
       {% endif %}
-      {% if link.preprint %} 
-      <a href="{{ link.preprint }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">preprint</a>
+      {% if link.bibtex %} 
+      <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
       {% endif %}
       {% if link.notes %} 
       <strong> <i style="color:#e74d3c">{{ link.notes }}</i></strong>

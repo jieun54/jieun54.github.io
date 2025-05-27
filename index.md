@@ -9,7 +9,7 @@ I am a Ph.D. Candidate at the University of Michigan School of Information, advi
 
 ## Recent News
 
-- **[Summer 2025]** This summer, I will be working as a data scientist intern for the Economy team at Roblox!
+- **[Summer 2025]** I will be working as a data scientist intern for the Economy team at Roblox!
 - **[May 2025]** I will attend the CSST 2025 Summer Institute.
 
 {% include_relative _includes/publications.md %}

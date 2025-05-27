@@ -9,7 +9,7 @@ I am a Ph.D. Candidate at the <a href="https://www.si.umich.edu/">University of 
 
 ## Recent News
 
-- **[Summer 2025]** I will be working as a data scientist intern for the Economy team at Roblox!
+- **[Summer 2025]** I will be working as a data scientist intern for the Economy team at <a href="https://corp.roblox.com/">Roblox</a>!
 - **[May 2025]** I will attend the CSST 2025 Summer Institute.
 
 {% include_relative _includes/publications.md %}

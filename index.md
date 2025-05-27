@@ -4,19 +4,16 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student at ...
+I am a Ph.D. Candidate at the University of Michigan School of Information. As a computational social scientist, I leverage computational methods and social science theories to extract insights
+into online user behaviors and interactions from large-scale data.
 
 ## Research Interests
 
-- **Computer Vision:** image recognition, image generation, video captioning
-- **Machine Learning:** meta-learning, incremental learning, transfer learning
-
+- **Online Prosocial Behaviors:** I study the spread of online prosociality and propose design recommendations for online platforms to promote prosociality based on empirical findings.
+- **Online Antisocial Behaviors:** I investigate how antisocial behaviors spread in online environments and explore dark design patterns embedded in online platforms.
 ## News
 
-- **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020.
-- **[Feb. 2020]** We will host the ACM Multimedia Asia 2020 conference in Singapore!
-- **[Sept. 2019]** Our paper about few-shot learning is accepted to NeurIPS 2019.
-- **[Mar. 2019]** Our paper about few-shot learning is accepted to CVPR 2019.
+- **[May, 2025]** I will attend the CSST 2025 Summer Institute!
 
 {% include_relative _includes/publications.md %}
 

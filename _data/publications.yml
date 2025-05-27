@@ -1,7 +1,12 @@
 main:
 
-  - title: Cheating in online gaming spreads through observation and victimization
-    authors: Ji Eun Kim, Milena Tsvetkova
+  - title: "Communication strategies for improving performance in virtual teams: Lessons from Dota 2"
+    authors: <strong>Ji Eun Kim</strong>, Lingyao Li, Libby Hemphill
+    conference: Under Review.
+    pdf: https://www.techrxiv.org/users/828756/articles/1226525-communication-strategies-for-improving-performance-in-virtual-teams-lessons-from-dota-2
+
+  - title: "Cheating in online gaming spreads through observation and victimization"
+    authors: <strong>Ji Eun Kim</strong>, Milena Tsvetkova
     conference: Network Science, 2021.
     pdf: https://doi.org/10.1017/nws.2021.19
     code: https://github.com/social-research/cheating

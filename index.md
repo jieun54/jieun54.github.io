@@ -13,5 +13,3 @@ I am a Ph.D. Candidate at the University of Michigan School of Information, advi
 - **[May 2025]** I will attend the CSST 2025 Summer Institute.
 
 {% include_relative _includes/publications.md %}
-
-{% include_relative _includes/working_papers.md %}

@@ -1,13 +1,8 @@
 main:
 
-  - title: "The Effects of Moral Framing on Online Fundraising Outcomes: Evidence from GoFundMe Campaigns"
-    authors: <strong>Ji Eun Kim</strong>, Libby Hemphill
-    conference: Under Review.
-    pdf: https://arxiv.org/abs/2505.11367
-
   - title: "The Spread of Virtual Gifting in Live Streaming: The Case of Twitch"
     authors: <strong>Ji Eun Kim</strong>, Seura Ha, Sangmi Kim, Libby Hemphill
-    conference: Under Review.
+    conference: Accepted to ICWSM 2026.
     pdf: https://arxiv.org/abs/2501.09235
 
   - title: "Communication strategies for improving performance in virtual teams: Lessons from Dota 2"

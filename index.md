@@ -9,7 +9,7 @@ I am a Ph.D. candidate at the <a href="https://www.si.umich.edu/">University of 
 
 ## News
 
-- **[January 2026]** Happy to share that I'll be joining <a href="https://www.meta.com/">Meta</a> as a Data Scientist Intern this upcoming summer in Menlo Park!
+- **[January 2026]** Happy to share that I'll be joining <a href="https://www.meta.com/about/company-info/">Meta</a> as a Data Scientist Intern this upcoming summer in Menlo Park!
 - **[January 2026]** I'll present my resource paper at <a href="https://chiir2026.github.io/">CHIIR 2026</a> in March.
 - **[November 2025]** I have been accepted to the virtual Doctoral Colloquium at <a href="https://www.ischools.org/iconference">iConference 2026</a> and will be presenting my work-in-progress dissertation!
 - **[July 2025]** Presented my paper on gift contagion among Twitch viewers at IC<sup>2</sup>S<sup>2</sup> 2025 in Norrköping, Sweden.

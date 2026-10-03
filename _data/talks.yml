@@ -1,0 +1,20 @@
+# ------------------------------------------------------------
+# Talks & Presentations on the Research page. Newest first.
+#   date   shown as written, e.g. 2026-05
+#   text   what and where; Markdown links work
+# ------------------------------------------------------------
+
+- date: "2026-05"
+  text: Two paper presentations, ICWSM 2026
+
+- date: "2026-04"
+  text: Poster, CHI 2026
+
+- date: "2026-03"
+  text: Resource paper, CHIIR 2026, Seattle
+
+- date: "2026-03"
+  text: Doctoral colloquium (virtual), iConference 2026
+
+- date: "2025-07"
+  text: Gift contagion among Twitch viewers, IC<sup>2</sup>S<sup>2</sup> 2025, Norrköping

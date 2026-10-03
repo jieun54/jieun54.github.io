@@ -1,0 +1,29 @@
+---
+layout: default
+---
+{% assign news_count = 6 %}
+
+<section class="sec intro">
+  {{ content }}
+</section>
+
+<section class="sec">
+  <h2>News</h2>
+  <ul class="timeline">
+    {% for item in site.data.news limit: news_count %}
+      <li{% if item.current %} class="current"{% endif %}>
+        <time>{{ item.date }}{% if item.current %} · now{% endif %}</time>
+        {{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="sec">
+  <h2>Recent Publications <a class="more" href="{% if site.all_publications_url contains '://' %}{{ site.all_publications_url }}{% else %}{{ site.all_publications_url | relative_url }}{% endif %}">View all →</a></h2>
+  <div class="pubs">
+    {% for p in site.data.publications limit: site.recent_publications %}
+      {% include publication.html pub=p %}
+    {% endfor %}
+  </div>
+</section>

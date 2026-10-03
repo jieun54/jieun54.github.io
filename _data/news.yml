@@ -1,0 +1,29 @@
+# ------------------------------------------------------------
+# News list on the Home page. Newest first: add new items at the TOP.
+#   date     any text, e.g. June 2026 or Summer 2025
+#   text     the news item; Markdown links work: [Meta](https://...)
+#   current  optional; true adds "· now" after the date
+# Home shows the first 6 items (change news_count in _layouts/home.html).
+# ------------------------------------------------------------
+
+- date: Summer 2026
+  #current: true
+  text: Worked as a Data Scientist Intern at [Meta](https://www.meta.com/about/company-info/) on the Sales and Marketing Intelligence team in Menlo Park.
+
+- date: May 2026
+  text: Presented two papers at ICWSM 2026.
+
+- date: April 2026
+  text: Presented a poster, "Role Reversals and Role-Based Inequality on Stack Overflow After the Release of ChatGPT," at CHI 2026.
+
+- date: March 2026
+  text: Presented my resource paper at CHIIR 2026 in Seattle and joined the virtual doctoral colloquium at iConference 2026.
+
+- date: July 2025
+  text: Presented my paper on gift contagion among Twitch viewers at IC<sup>2</sup>S<sup>2</sup> 2025 in Norrköping, Sweden.
+
+- date: Summer 2025
+  text: Worked as a Data Scientist Intern on the Economy team at [Roblox](https://corp.roblox.com/).
+
+- date: May 2025
+  text: Attended the CSST 2025 Summer Institute.

@@ -1,0 +1,142 @@
+/* ==========================================================
+   Site styles
+   1. Colors (light + dark)     5. Sections & bio
+   2. Base                      6. News list
+   3. Top menu                  7. Publications
+   4. Header (photo + name)     8. Research page
+                                9. Footer & phone layout
+   ========================================================== */
+
+/* ---------- 1. Colors ----------
+   Change a color here and it updates everywhere.
+   The first block is light mode; the two dark blocks must match each other. */
+:root {
+  --bg: #ffffff;          /* page background */
+  --fg: #1d2433;          /* main text */
+  --mute: #5b6577;        /* secondary text: dates, authors */
+  --line: #e3e7ee;        /* borders and dividers */
+  --soft: #f2f4f8;        /* light fills: buttons, cards */
+  --accent: #00274c;      /* Michigan blue: venue badges, theme cards, active filter */
+  --link: #1f5a99;        /* link color */
+  --maize: #ffcb05;       /* Michigan maize (spare color, not used right now) */
+  --highlight: #ffe58a;   /* <mark> highlighter in the bio */
+  --on-accent: #ffffff;   /* text on top of --accent */
+
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple SD Gothic Neo", "Malgun Gothic";
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --page-width: 880px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12161d; --fg: #e7ebf2; --mute: #9ba5b7; --line: #272e3a; --soft: #1b212b;
+    --accent: #ffcb05; --link: #8fbaf0; --maize: #ffcb05; --highlight: #5a4806; --on-accent: #12161d;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12161d; --fg: #e7ebf2; --mute: #9ba5b7; --line: #272e3a; --soft: #1b212b;
+  --accent: #ffcb05; --link: #8fbaf0; --maize: #ffcb05; --highlight: #5a4806; --on-accent: #12161d;
+  color-scheme: dark;
+}
+
+/* ---------- 2. Base ---------- */
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.65;
+  padding: 0 16px 64px;
+}
+a { color: var(--link); text-decoration: none; border-bottom: 1px dotted currentColor; }
+a:hover { border-bottom-style: solid; }
+:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; border-radius: 4px; }
+h1, h2, h3 { margin: 0; text-wrap: balance; }
+p { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+.wrap { max-width: var(--page-width); margin: 0 auto; }
+
+/* ---------- 3. Top menu ---------- */
+.nav { position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); margin: 0 -16px; padding: 0 16px; }
+.nav .wrap { display: flex; justify-content: flex-end; align-items: center; flex-wrap: wrap; gap: 8px; padding: 14px 0; }
+.nav a { color: var(--fg); border: 0; font-size: 16px; padding: 6px 14px; border-radius: 8px; }
+.nav a:hover { background: var(--soft); }
+.nav a[aria-current="page"] { background: var(--soft); font-weight: 600; }
+.theme-toggle { margin-left: 8px; background: transparent; border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; line-height: 0; cursor: pointer; }
+.theme-toggle:hover { background: var(--soft); }
+.theme-toggle svg { width: 18px; height: 18px; fill: var(--fg); }
+
+/* ---------- 4. Header: photo left, info right ---------- */
+.hero { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 36px; align-items: center; padding: 44px 0 36px; }
+.hero img { width: 200px; height: 200px; object-fit: cover; border-radius: 16px; border: 4px solid var(--bg); box-shadow: 0 0 0 1px var(--line), 0 8px 24px rgba(0, 0, 0, .08); }
+.hero-info { display: grid; gap: 6px; min-width: 0; }
+.hero h1 { font-size: 34px; font-weight: 600; letter-spacing: -.01em; line-height: 1.15; }
+.name-ko { font-size: 62%; font-weight: 400; color: var(--mute); margin-left: 6px; white-space: nowrap; }
+.role { font-size: 18px; }
+.email { font-family: var(--font-mono); font-size: 15px; color: var(--mute); }
+.links { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 8px; font-size: 15px; }
+.links a { color: var(--fg); border: 0; }
+.links a::before { content: "["; color: var(--mute); margin-right: 1px; }
+.links a::after { content: "]"; color: var(--mute); margin-left: 1px; }
+.links a:hover { color: var(--link); }
+
+/* ---------- 5. Sections & bio ---------- */
+.page { display: grid; gap: 48px; }
+.sec h2 { font-size: 24px; font-weight: 700; margin-bottom: 18px; display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 14px; }
+.sec h2 .more { font-size: 15px; font-weight: 400; }
+.intro { display: grid; gap: 16px; max-width: 68ch; }
+mark { background: linear-gradient(transparent 58%, var(--highlight) 58%); color: inherit; padding: 0 2px; }
+
+/* ---------- 6. News list ---------- */
+.timeline { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+.timeline li { font-size: 16px; line-height: 1.55; }
+.timeline time { display: block; font-family: var(--font-mono); font-size: 13px; color: var(--mute); }
+
+/* ---------- 7. Publications ---------- */
+.pubs { display: grid; gap: 26px; }
+.year-group { display: grid; gap: 22px; }
+.year { font-family: var(--font-mono); font-size: 13px; letter-spacing: .08em; color: var(--mute); border-bottom: 1px solid var(--line); padding-bottom: 4px; }
+.pub.has-image { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 20px; align-items: start; }
+.pub-img { width: 180px; border-radius: 8px; border: 1px solid var(--line); background: #fff; }
+.pub-body { display: grid; gap: 4px; min-width: 0; }
+.pub h3 { font-size: 18px; font-weight: 600; line-height: 1.4; }
+.pub h3 a { color: var(--fg); }
+.authors, .venue-full { font-size: 15px; color: var(--mute); }
+.authors strong { color: var(--fg); font-weight: 600; }
+.venue-full { font-style: italic; }
+.pub-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin-top: 4px; font-size: 14px; }
+.venue { background: var(--accent); color: var(--on-accent); font-family: var(--font-mono); font-size: 12px; font-weight: 500; padding: 2px 8px; border-radius: 4px; }
+.tag { font-size: 12px; color: var(--mute); border: 1px solid var(--line); border-radius: 999px; padding: 1px 9px; }
+.note { font-size: 12px; font-weight: 600; color: var(--fg); background: var(--highlight); border-radius: 4px; padding: 1px 8px; }
+.btn { font: inherit; font-size: 13px; color: var(--fg); background: var(--soft); border: 1px solid var(--line); border-radius: 6px; padding: 3px 10px; cursor: pointer; display: inline-block; line-height: 1.5; }
+.btn:hover { border-color: var(--mute); border-bottom-style: solid; }
+.abstract { font-size: 15px; color: var(--mute); background: var(--soft); border-radius: 8px; padding: 12px 14px; margin-top: 6px; max-width: 72ch; }
+
+/* ---------- 8. Research page ---------- */
+.themes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.theme-card { border-top: 3px solid var(--accent); background: var(--soft); border-radius: 0 0 8px 8px; padding: 14px 16px; display: grid; gap: 6px; align-content: start; }
+.theme-card h3 { font-size: 16px; font-weight: 600; }
+.theme-card p { font-size: 15px; color: var(--mute); line-height: 1.55; }
+.filters { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font: inherit; font-size: 14px; font-weight: 400; color: var(--fg); background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 3px 12px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+.talks { list-style: none; margin: 0; padding: 0; }
+.talks li { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 14px; padding: 10px 0; border-top: 1px solid var(--line); font-size: 16px; }
+.talks time { font-family: var(--font-mono); font-size: 13px; color: var(--mute); padding-top: 3px; }
+
+/* ---------- 9. Footer & phone layout ---------- */
+.footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 13px; color: var(--mute); }
+
+@media (max-width: 640px) {
+  .nav .wrap { justify-content: flex-start; }
+  .hero { grid-template-columns: minmax(0, 1fr); gap: 20px; padding: 28px 0 24px; }
+  .hero img { width: 140px; height: 140px; }
+  .hero h1 { font-size: 28px; }
+  .themes { grid-template-columns: minmax(0, 1fr); }
+  .pub.has-image { grid-template-columns: minmax(0, 1fr); }
+  .talks li { grid-template-columns: minmax(0, 1fr); gap: 0; }
+}

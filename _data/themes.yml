@@ -1,0 +1,23 @@
+# ------------------------------------------------------------
+# Research themes: the cards at the top of the Research page AND the
+# filter buttons above the publication list.
+#   key          short id; a publication's "theme" field must match it
+#   name         card title
+#   short        filter button label above the publication list
+#   description  one or two sentences for the card
+# ------------------------------------------------------------
+
+- key: prosocial
+  name: Prosocial behavior
+  short: Prosocial
+  description: Giving and helping online, from virtual gifts on Twitch to fundraising on GoFundMe.
+
+- key: antisocial
+  name: Antisocial behavior
+  short: Antisocial
+  description: How harmful behavior such as cheating in online games spreads between users.
+
+- key: inequality
+  name: Status & inequality
+  short: Inequality
+  description: How status and platform design shape who participates and who gets heard.

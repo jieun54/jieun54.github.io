@@ -1,0 +1,23 @@
+{% comment %} One publication. Usage: {% include publication.html pub=p %} {% endcomment %}
+{% assign p = include.pub %}
+{% assign theme = site.data.themes | where: 'key', p.theme | first %}
+<article class="pub{% if p.image %} has-image{% endif %}" data-theme-key="{{ p.theme }}">
+  {% if p.image %}<img class="pub-img" src="{{ p.image | relative_url }}" alt="" loading="lazy">{% endif %}
+  <div class="pub-body">
+    <h3>{% if p.pdf %}<a href="{{ p.pdf }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h3>
+    <p class="authors">{{ p.authors }}</p>
+    {% if p.venue_full %}<p class="venue-full">{{ p.venue_full }}</p>{% endif %}
+    <div class="pub-meta">
+      {% if p.venue %}<span class="venue">{{ p.venue }}</span>{% endif %}
+      {% if theme and site.show_theme_tags %}<span class="tag">{{ theme.name }}</span>{% endif %}
+      {% if p.note %}<span class="note">{{ p.note }}</span>{% endif %}
+      {% if p.abstract %}<button class="btn abs-toggle" type="button" aria-expanded="false">Abstract</button>{% endif %}
+      {% if p.pdf %}<a class="btn" href="{{ p.pdf }}">PDF</a>{% endif %}
+      {% if p.code %}<a class="btn" href="{{ p.code }}">Code</a>{% endif %}
+      {% if p.data %}<a class="btn" href="{{ p.data }}">Data</a>{% endif %}
+      {% if p.slides %}<a class="btn" href="{{ p.slides }}">Slides</a>{% endif %}
+      {% if p.poster %}<a class="btn" href="{{ p.poster }}">Poster</a>{% endif %}
+    </div>
+    {% if p.abstract %}<p class="abstract" hidden>{{ p.abstract }}</p>{% endif %}
+  </div>
+</article>

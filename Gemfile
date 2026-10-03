@@ -1,5 +1,5 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.8.5"
-
-gem "webrick", "~> 1.8"
+# Same Jekyll version and plugins that GitHub Pages uses to build the site
+gem "github-pages", group: :jekyll_plugins
+gem "webrick"

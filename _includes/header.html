@@ -1,0 +1,13 @@
+<header class="hero">
+  <img src="{{ site.avatar | relative_url }}" alt="Portrait of {{ site.title }}">
+  <div class="hero-info">
+    <h1>{{ site.title }}{% if site.name_ko and site.name_ko != '' %} <span class="name-ko" lang="ko">{{ site.name_ko }}</span>{% endif %}</h1>
+    <p class="role">{{ site.role }}, {% if site.affiliation_url %}<a href="{{ site.affiliation_url }}">{{ site.affiliation }}</a>{% else %}{{ site.affiliation }}{% endif %}</p>
+    {% if site.email %}<p class="email">{{ site.email }}</p>{% endif %}
+    <p class="links">
+      {% for link in site.links %}
+        <a href="{% if link.url contains '://' %}{{ link.url }}{% else %}{{ link.url | relative_url }}{% endif %}">{{ link.name }}</a>
+      {% endfor %}
+    </p>
+  </div>
+</header>

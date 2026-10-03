@@ -1,53 +1,58 @@
-# Basic Information 
-title: Ji Eun (Jinny) Kim
-position: Ph.D. Candidate
-affiliation: University of Michigan
+# ------------------------------------------------------------
+# Site settings. After editing this file, restart `bundle exec
+# jekyll serve` to see changes locally (it does not auto-reload).
+# ------------------------------------------------------------
+
+# Your name and info, shown in the header on every page
+title: Ji Eun (Jinny) Kim          # English name (also the browser-tab title)
+name_ko: 김지은                     # Korean name shown next to it; leave empty to hide
+role: Ph.D. Candidate
+affiliation: University of Michigan School of Information
+affiliation_url: https://www.si.umich.edu/
 email: jieunkim (at) umich.edu
+avatar: assets/img/profile.jpg   # 900px copy of JinnyKim.jpg; resize new photos the same way
 
-# Search Engine Optimization (SEO)
-# The following information is used to improve the website traffic from search engines, e.g., Google.
-keywords: Ji Eun Kim, Jieun Kim, jieun kim, ji eun kim, jinny kim, Jinny Kim
-description: Ji Eun (Jinny) Kim is a Ph.D. Candidate at the University of Michigan School of Information. Her research interests are online prosocial and antisocial behaviors.
-canonical: https://jieun54.github.io/
+# Links shown in [brackets] under your name. Delete a line to hide it;
+# add a new "- name: / url:" pair to add one. Order here = order on the page.
+links:
+  - name: CV
+    url: assets/files/Jinny_CV.pdf
+  - name: Google Scholar
+    url: https://scholar.google.com/citations?user=UqlTYVsAAAAJ&hl=en
+  - name: GitHub
+    url: https://github.com/jieun54
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/ji-eun-kim-9bb0b1316/
 
-# Links 
-# If you don't need one of them, you may delete the corresponding line.
-google_scholar: https://scholar.google.com/citations?user=UqlTYVsAAAAJ&hl=en
-cv_link: assets/files/Jinny_CV.pdf
-github_link: https://github.com/jieun54
-linkedin: https://www.linkedin.com/in/ji-eun-kim-9bb0b1316/
-# twitter: https://twitter.com/
+# Top menu. "url" is a page on this site (starts with /) or a full link.
+# To bring a tab back, remove the "# " in front of its two lines.
+nav:
+  - name: Home
+    url: /
+  # - name: Research
+  #   url: /research/
+  # - name: CV
+  #   url: /assets/files/Jinny_CV.pdf
 
-# Images (e.g., your profile picture and your website's favicon) 
-# "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
-avatar: ./assets/img/new_profile_img.jpg
-# favicon: ./assets/img/favicon.png
-# favicon_dark: ./assets/img/favicon-dark.png
+# How many publications the Home page shows under "Recent Publications"
+recent_publications: 3
+# Where "View all →" next to Recent Publications goes.
+# When the Research page is back, change this to /research/#publications
+all_publications_url: https://scholar.google.com/citations?user=UqlTYVsAAAAJ&hl=en
+# Show the grey theme tag (e.g. "Prosocial behavior") on each publication: true or false
+show_theme_tags: false
 
-# Footnote
-# You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
-enable_footnote: true
+# Search engines and link previews
+description: Ji Eun (Jinny) Kim is a Ph.D. candidate at the University of Michigan School of Information who studies how human behavior and social interaction in online spaces emerge through the interplay of users, social contexts, and technologies.
+keywords: Ji Eun Kim, Jieun Kim, Jinny Kim, 김지은, computational social science, University of Michigan
+url: https://jieun54.github.io
+baseurl: ""
+lang: en
 
-# Auto Dark Mode
-# You may use the option to disable the automatic dark theme
-auto_dark_mode: true
-
-# Font
-# You can use this option to choose between Serif or Sans Serif fonts.
-font: "Serif" # or "Sans Serif"
-
-# Use this project as a remote theme for GitHub Pages
-# See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
-remote_theme: yaoyao-liu/minimal-light
-
-# The following files will be removed from the generated website.
+# Build settings (no need to change)
+markdown: kramdown
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - README_zh_Hans.md
-  - README_zh_Hant.md
-  - README_de.md
-  - LICENSE
-  - minimal-light.gemspec
-  - html_source_file/
+  - vendor

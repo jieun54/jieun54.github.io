@@ -1,23 +1,51 @@
-main:
+# ------------------------------------------------------------
+# Publications. Newest first: add new papers at the TOP.
+# Home shows the first few (see recent_publications in _config.yml);
+# the Research page shows all of them, grouped by year.
+#
+# Fields (only title, authors, year, venue are required):
+#   title       paper title (wrap in "double quotes")
+#   authors     author list; put <strong></strong> around your name
+#   year        used for the year headings on the Research page
+#   venue       short badge text, e.g. ICWSM 2026
+#   venue_full  full venue name shown in italics
+#   theme       one key from _data/themes.yml (prosocial, antisocial, inequality)
+#   pdf / code / data / slides / poster   links, each shown as a button
+#   abstract    optional; adds an "Abstract" button that expands it
+#   image       optional thumbnail, e.g. assets/img/papers/twitch.png
+#   note        optional short label, e.g. "Best Paper Award" or "To appear"
+# ------------------------------------------------------------
 
-  - title: "Role Reversals and Role-Based Inequality on Stack Overflow After the Release of ChatGPT"
-    authors: <strong>Ji Eun Kim</strong>, Léa Vitale, Yulin Yu
-    conference: Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing System (CHI EA 2026).
-    pdf: https://dl.acm.org/doi/10.1145/3772363.3799368
+- title: "Navigating the Changing Landscape of Online Knowledge Consumption and Production in the Age of Generative AI: Evidence from Stack Overflow"
+  authors: <strong>Ji Eun Kim</strong>, Léa Vitale, Libby Hemphill, Yulin Yu
+  year: 2026
+  venue: Preprint
+  # venue_full: Under Review at CHI 2027
+  # theme: inequality
+  pdf: https://arxiv.org/abs/2609.38563
 
-  - title: "The Spread of Virtual Gifting in Live Streaming: The Case of Twitch"
-    authors: <strong>Ji Eun Kim</strong>, Seura Ha, Sangmi Kim, Libby Hemphill
-    conference: Proceedings of the 20th International AAAI Conference on Web and Social Media (ICWSM 2026).
-    pdf: https://ojs.aaai.org/index.php/ICWSM/article/view/42693
+- title: "The Spread of Virtual Gifting in Live Streaming: The Case of Twitch"
+  authors: <strong>Ji Eun Kim</strong>, Seura Ha, Sangmi Kim, Libby Hemphill
+  year: 2026
+  venue: ICWSM 2026
+  venue_full: Proceedings of the 20th International AAAI Conference on Web and Social Media
+  # theme: prosocial
+  pdf: https://ojs.aaai.org/index.php/ICWSM/article/view/42693
 
-  - title: "Moral Framing and Online Fundraising Outcomes: Evidence from GoFundMe Campaigns"
-    authors: <strong>Ji Eun Kim</strong>, Libby Hemphill
-    conference: Proceedings of the 20th International AAAI Conference on Web and Social Media (ICWSM 2026).
-    pdf: https://ojs.aaai.org/index.php/ICWSM/article/view/42692
+- title: "Moral Framing and Online Fundraising Outcomes: Evidence from GoFundMe Campaigns"
+  authors: <strong>Ji Eun Kim</strong>, Libby Hemphill
+  year: 2026
+  venue: ICWSM 2026
+  venue_full: Proceedings of the 20th International AAAI Conference on Web and Social Media
+  # theme: prosocial
+  pdf: https://ojs.aaai.org/index.php/ICWSM/article/view/42692
 
-  - title: "Cheating in online gaming spreads through observation and victimization"
-    authors: <strong>Ji Eun Kim</strong>, Milena Tsvetkova
-    conference: Network Science, 2021.
-    pdf: https://doi.org/10.1017/nws.2021.19
-    code: https://github.com/social-research/cheating
-    data: https://figshare.com/articles/dataset/PUBG_gameplay_logs/13077215
+- title: "Cheating in online gaming spreads through observation and victimization"
+  authors: <strong>Ji Eun Kim</strong>, Milena Tsvetkova
+  year: 2021
+  venue: Network Science
+  venue_full: Network Science, 2021
+  # theme: antisocial
+  pdf: https://doi.org/10.1017/nws.2021.19
+  code: https://github.com/social-research/cheating
+  data: https://figshare.com/articles/dataset/PUBG_gameplay_logs/130772154

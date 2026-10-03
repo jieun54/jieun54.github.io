@@ -1,0 +1,45 @@
+---
+layout: default
+---
+{% assign intro = content | strip %}
+{% if intro != '' %}<section class="sec intro">{{ content }}</section>{% endif %}
+
+<section class="sec">
+  <h2>Research Themes</h2>
+  <div class="themes">
+    {% for t in site.data.themes %}
+      <div class="theme-card"><h3>{{ t.name }}</h3><p>{{ t.description }}</p></div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="sec" id="publications">
+  <h2>Publications
+    <span class="filters" role="group" aria-label="Filter publications by theme">
+      <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
+      {% for t in site.data.themes %}
+        <button class="chip" type="button" data-filter="{{ t.key }}" aria-pressed="false">{{ t.short | default: t.name }}</button>
+      {% endfor %}
+    </span>
+  </h2>
+  <div class="pubs">
+    {% assign by_year = site.data.publications | group_by: 'year' %}
+    {% for group in by_year %}
+      <div class="year-group">
+        <div class="year">{{ group.name }}</div>
+        {% for p in group.items %}
+          {% include publication.html pub=p %}
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="sec">
+  <h2>Talks &amp; Presentations</h2>
+  <ul class="talks">
+    {% for t in site.data.talks %}
+      <li><time>{{ t.date }}</time><span>{{ t.text | markdownify | remove: '<p>' | remove: '</p>' }}</span></li>
+    {% endfor %}
+  </ul>
+</section>

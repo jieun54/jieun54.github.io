@@ -8,7 +8,7 @@ title: Ji Eun (Jinny) Kim          # English name (also the browser-tab title)
 name_ko: 김지은                     # Korean name shown next to it; leave empty to hide
 role: Ph.D. Candidate
 affiliation: University of Michigan School of Information
-affiliation_url: https://www.si.umich.edu/
+# affiliation_url: https://www.si.umich.edu/
 email: jieunkim (at) umich.edu
 avatar: assets/img/profile.jpg   # 900px copy of JinnyKim.jpg; resize new photos the same way
 
@@ -19,6 +19,8 @@ links:
     url: assets/files/Jinny_CV.pdf
   - name: Google Scholar
     url: https://scholar.google.com/citations?user=UqlTYVsAAAAJ&hl=en
+  - name: ORCID
+    url: https://orcid.org/0009-0008-1414-7341
   - name: GitHub
     url: https://github.com/jieun54
   - name: LinkedIn
